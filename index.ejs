@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel='stylesheet' href='css/index.css' />
+    <script src="https://kit.fontawesome.com/6baebf3609.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="images/thebluelogo.png" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="nav_logo d-flex align-center">
+                <img src="images/thebluelogo.png" alt="logz" style="width:50px;height:50px;">
+                <h2> TAMARAI</h2>
+            </div>
+            <div class="nav_li">
+                <ul class="d-flex align-center">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">fav</a>
+                    </li>
+                    <li>
+                        <a href="#">profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Shopping-cart</a>
+                    </li>
+                    <i class="fas fa-search" id="search"></i>
+                </ul>
+                <div class="input_search d-flex">
+                    <input type="text" placeholder="Search here">
+                    <i class="fas fa-times font-16" id="remove"></i>
+                </div>
+            </div>
+            <div class="nav_btn">
+                <a href="user"><button style="right: 110px;">sign in</button></a>
+                <a href="user/register"><button>sign up</button></a>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="left-col">
+            <h1>TAMA<span>RAI</span></h1>
+            <h3>If you can't beat Lot(us), <span> Join Lot(us)</span></h3>
+            <p>Tamarai is an e-commerce website for artistic ideas and art pieces that<br> allows a user to purchase and sell at the same time! So, Don't miss this chance.<br> Wanna Learn more about Tamarai?
+            </p>
+            <div class="btn">
+                <button type="button">Learn More</button>
+                <button type="button">About us</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/twitter.png" alt="twitter">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/instagram.png" alt="instagram">
+                <img src="images/pinterest.png" alt="pinterest">
+            </div>
+        </div>
+        <div class="right-col">
+            <img src="images/main.jpg" alt="main">
+        </div>
+        <%- include('partials/chat.ejs') %>
+
+    </div>
+
+</body>
+
+</html>

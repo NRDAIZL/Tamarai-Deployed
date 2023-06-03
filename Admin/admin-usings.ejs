@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add user</title>
+    <link rel="shortcut icon" type="image/jpg" href="/images/thebluelogo.png" />
+    <link rel="stylesheet" href="/css/admin/admin-sellings.css">
+</head>
+
+<body>
+        <%- include('../partials/adminNav.ejs') %>
+        <h1>add user</h1>
+        <form method="post" action="/admin/dashboard/addUser">
+            <div class="users">
+                <label for="username"> username </label>
+                <input id="username" type="text" placeholder="username" name="username"> <br>
+                <span id="Uerror">error</span>
+            </div>
+            <div class="passes">
+                <label for="password"> password </label>
+                <input id="password" type="password" placeholder="password" name="password"> <br>
+                <span id="Perror">error</span>
+            </div>
+            <button type="submit"> amira</button>
+        </form>
+        <%- include('../partials/footer.ejs') %>
+</body>
+</html>
